@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+    :root{/*variaveis*/
+        --cor-menu: #FFD700;
+        --cor-h1:#9c987e ;
+        --cor-h2:#fdea7c  ;
+        --cor-texto:#FFFAF0 ;
+        --cor-texto-menu:#141418;
+    }
+
+
+body{
+    background-image: url(hexagono.png);
+    background-size: 40%;
+    margin: 0%;
+    
+}
+    .menu{
+        background-color: var(--cor-menu);
+        padding: 0.7vh;
+        
+        
+    }
+    .menu ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .menu li{
+        list-style: none;
+    }
+    .menu li a{
+        color: var(--cor-texto-menu);
+        text-decoration: none;
+        font-family: 'Oswald', serif;
+        text-underline-offset: .1em;
+        font-size: 200%;
+        transition: all 0.5s ease; /*velocidade da transição*/    
+    }
+    .menu li a:hover{
+        text-decoration: underline;
+        font-size: 300%;/*tanto q vai aumentar*/
+    }
+    .texto{
+        margin-left:28%;
+
+    }
+    h1{border-radius: 5%;
+        padding: 3%;
+        background-color: #141418;
+        list-style: none;
+        display: flex;
+        margin-right:20%;
+        padding-top:5% ;
+        justify-content: center;
+        font-family: 'Oswald', sans-serif;/*fonte*/
+        font-weight: 400;/*tamanho da grossura da fonte*/
+        font-size: 70px;
+        color: var(--cor-h1);
+    }
+
+    h2{
+        border-radius: 5%;
+        padding: 3%;
+        background-color: #141418;
+        display: flex;
+        justify-content: center;
+        margin-right:20%;
+        padding:6%;
+        font-family: 'Work sans', sans-serif;/*fonte*/
+        font-weight: 600;/*tamanho da grossura da fonte*/
+        font-size: 48px;
+        color: var(--cor-h2);
+    }
+
+    p{  border-radius: 5%;
+        padding: 3%;
+        background-color: #141418;
+        color: var(--cor-texto);
+        font-family: 'Roboto Mono', serif;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        margin-right:10%;
+        color: var(--cor-texto);
+    }
