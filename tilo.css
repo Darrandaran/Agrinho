@@ -50,7 +50,11 @@ body{
         margin-left:28%;
 
     }
-    h1{
+    h1{ text-shadow: 
+        1px -1px 0 #444444, 
+        -1px 2px 1px #505050, 
+        -2px 4px 1px #636363, 
+        -3px 6px 1px #727272;
         list-style: none;
         display: flex;
         margin-right:10%;
@@ -62,7 +66,11 @@ body{
         color: var(--cor-h1);
     }
 
-    h2{
+    h2{ text-shadow: 
+        1px -1px 0 #444444, 
+        -1px 2px 1px #505050, 
+        -2px 4px 1px #636363, 
+        -3px 6px 1px #727272;
         display: flex;
         justify-content: center;
         margin-right:10%;
