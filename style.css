@@ -97,7 +97,7 @@ button{
 
 .leite:before {/*é sobre a barrinha que aparece quando coloca o mouse em cima*/
   content: '';
-  width:500px;
+  width:200rem;
   height: 5px;
   background-color:#fad998;
   position: absolute;
