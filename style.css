@@ -71,11 +71,11 @@ nav li a {
 
 }
 button{
-  width: 45rem;
+  width: 56rem;
   height: 4rem;
   border-style:none;
   position: relative;
-  top: 46%;
+  top: 45%;
   display: block;/**/
   justify-content:center;
   text-align: center;
@@ -97,7 +97,7 @@ button{
 
 .leite:before {/*é sobre a barrinha que aparece quando coloca o mouse em cima*/
   content: '';
-  width:100%;
+  width:150rem;
   height: 5px;
   background-color:#fad998;
   position: absolute;
@@ -108,7 +108,7 @@ button{
 }
 .mel:before {/*é sobre a barrinha que aparece quando coloca o mouse em cima*/
   content: '';
-  width: 100%;
+  width: 150rem;
   height: 5px;
   background-color: #1A1414;
   position: absolute;
