@@ -71,6 +71,7 @@ nav li a {
 
 }
 button{
+   margin-right: 50%;/*atualizar no git*/
   width: 45rem;
   height: 4rem;
   border-style:none;
