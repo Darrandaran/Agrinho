@@ -97,7 +97,7 @@ button{
 
 .leite:before {/*é sobre a barrinha que aparece quando coloca o mouse em cima*/
   content: '';
-  width:200%;
+  width:200rem;
   height: 5px;
   background-color:#fad998;
   position: absolute;
@@ -108,7 +108,7 @@ button{
 }
 .mel:before {/*é sobre a barrinha que aparece quando coloca o mouse em cima*/
   content: '';
-  width: 200%;
+  width: 200rem;
   height: 5px;
   background-color: #1A1414;
   position: absolute;
