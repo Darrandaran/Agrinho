@@ -70,9 +70,8 @@ nav li a {
   justify-content:center;
 
 }
-button{
-   margin-right: 50%;/*atualizar no git*/
-  width: 45rem;
+button{ 
+  width: 100%;
   height: 4rem;
   border-style:none;
   position: relative;
@@ -90,9 +89,11 @@ button{
 }
 .botao_leite{
   background-color:#FFFAF0;
+
 }
 .botao_mel{
   background-color:#FFD700;
+
 }
 
 
@@ -127,7 +128,7 @@ nav li a:after {/*texto que aparece em baixo*/
   position: relative;
   z-index: 100;
   color: #1A1414;/*cor texto*/
-  display: flex;/*o block deixa o texto no meio*/
+  display: block;/*o block deixa o texto no meio*/
   justify-content:center;
   margin-right: auto;
   margin-left: auto;
@@ -154,3 +155,6 @@ nav li:nth-of-type(1){background-color:#FFFAF0}
 nav li:nth-of-type(2){background-color:#FFD700 }
 
 
+@media screen and (max-width:1230px){
+
+}
