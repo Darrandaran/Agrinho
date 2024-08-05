@@ -33,6 +33,7 @@ body{
         font-family: 'Oswald', serif;
         text-underline-offset: .1em;
         font-size: 200%;
+        letter-spacing: 3px;
         transition: all 0.5s ease; /*velocidade da transição*/    
     }
     .menu li a:hover{
@@ -46,23 +47,19 @@ body{
     .menu li a img:hover{
         height: 5rem;/*tanto q vai aumentar*/
     }
-    .texto{
-        margin-left:28%;
 
+    .sobe, .h2, p{
+        visibility: hidden;
     }
+
     h1{     text-shadow: 
         1px -1px 0 #444444, 
         -1px 2px 1px #505050, 
         -2px 4px 1px #636363, 
         -3px 6px 1px #727272;
-
-    
-    
-        /*text-shadow: black 0.1em 0.1em 5px;*/
         list-style: none;
         display: flex;
-        margin-right:10%;
-        padding-top:5% ;
+        padding:5%;
         justify-content: center;
         font-family: 'Oswald', sans-serif;/*fonte*/
         font-weight: 400;/*tamanho da grossura da fonte*/
@@ -75,10 +72,8 @@ body{
         -1px 2px 1px #505050, 
         -2px 4px 1px #636363, 
         -3px 6px 1px #727272;
-
         display: flex;
         justify-content: center;
-        margin-right:10%;
         padding:6%;
         font-family: 'Work sans', sans-serif;/*fonte*/
         font-weight: 600;/*tamanho da grossura da fonte*/
@@ -87,7 +82,9 @@ body{
     }
 
     p{  
-        border-radius: 5%;
+        border-radius: 5vh;
+        margin-top: 0!important;
+        margin: 15%;
         padding: 5%;
         background-color: #141418;
         color: var(--cor-texto);
@@ -95,6 +92,67 @@ body{
         font-size: 30px;
         display: flex;
         justify-content: center;
-        margin-right:10%;
         color: var(--cor-texto);
     }
+
+    @media (min-width:800px){
+        .menu-mobile{display: none;}
+        .abrir{display: none;}
+    }
+   @media (max-width:799px)
+   {.menu{display: none;}        
+   .abrir img{
+    height: 4rem;
+    padding: 3% 0 0 2%;
+    }
+        .menu-mobile{
+            background-color: #cc7849;
+            height: 100%;
+            width:0%;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 99999;
+            transition: .4s;
+            }
+        .menu-mobile.abrir-menu{
+            width: 70%;
+        }
+        .menu-mobile.abrir-menu ~ .overlay{
+            display: block;
+        }
+        .menu-mobile .fechar img{
+            height: 3.5rem;
+            padding: 3% 0 0 2%;
+        }
+            .menu-mobile nav{
+                text-align: left; 
+            }
+
+            .menu-mobile nav ul li{
+                list-style: none;
+                padding: 2vh;
+            }
+
+            .menu-mobile nav ul li a{
+                list-style: none;
+                color: var(--cor-texto-menu);
+                text-decoration: none;
+                font-family: 'Oswald', serif;
+                text-underline-offset: .1em;
+                font-size: 200%; 
+                padding: 4%;
+                letter-spacing: 2px;
+            }
+            .overlay{
+                background-color: #141418c2;
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left:0;
+                z-index: 888;
+                display: none;
+            }
+    };
