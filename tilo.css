@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+    :root{/*variaveis*/
+        --cor-fundo:#141418 ;
+        --cor-menu: #f5f2fa;
+        --cor-h1:#FFFAF0 ;
+        --cor-h2: #f2feff ;
+        --cor-texto:#cc7849  ;
+        --cor-texto-menu: #141418;
+    }
+
+
+body{
+    background-image: url(vaca.png);
+    margin:0;
+
+}
+    .menu{
+        background-color: var(--cor-menu);
+        padding: 0.7vh;  
+    }
+    .menu ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .menu li{
+        list-style: none;
+    }
+    .menu li a{
+        color: var(--cor-texto-menu);
+        text-decoration: none;
+        font-family: 'Oswald', serif;
+        text-underline-offset: .1em;
+        font-size: 200%;
+        letter-spacing: 3px;
+        transition: all 0.5s ease; /*velocidade da transição*/    
+    }
+    .menu li a:hover{
+        text-decoration: underline;
+        font-size: 300%;/*tanto q vai aumentar*/
+    }
+    .menu li a img{
+        height: 2.8rem;
+        transition: all 0.5s ease;
+    }
+    .menu li a img:hover{
+        height: 5rem;/*tanto q vai aumentar*/
+    }
+
+    .sobe, .h2, p{
+        visibility: hidden;
+    }
+
+    h1{     text-shadow: 
+        1px -1px 0 #444444, 
+        -1px 2px 1px #505050, 
+        -2px 4px 1px #636363, 
+        -3px 6px 1px #727272;
+        list-style: none;
+        display: flex;
+        padding:5%;
+        justify-content: center;
+        font-family: 'Oswald', sans-serif;/*fonte*/
+        font-weight: 400;/*tamanho da grossura da fonte*/
+        font-size: 70px;
+        color: var(--cor-h1);
+    }
+
+    h2{text-shadow: 
+        1px -1px 0 #444444, 
+        -1px 2px 1px #505050, 
+        -2px 4px 1px #636363, 
+        -3px 6px 1px #727272;
+        display: flex;
+        justify-content: center;
+        padding:6%;
+        font-family: 'Work sans', sans-serif;/*fonte*/
+        font-weight: 600;/*tamanho da grossura da fonte*/
+        font-size: 48px;
+        color: var(--cor-h2);
+    }
+
+    p{  
+        border-radius: 5vh;
+        margin-top: 0!important;
+        margin: 15%;
+        padding: 5%;
+        background-color: #141418;
+        color: var(--cor-texto);
+        font-family: 'Roboto Mono', serif;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        color: var(--cor-texto);
+    }
+
+    @media (min-width:800px){
+        .menu-mobile{display: none;}
+        .abrir{display: none;}
+    }
+   @media (max-width:799px)
+   {.menu{display: none;}        
+   .abrir img{
+    height: 4rem;
+    padding: 3% 0 0 2%;
+    }
+        .menu-mobile{
+            background-color: #cc7849;
+            height: 100%;
+            width:0%;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 99999;
+            transition: .4s;
+            }
+        .menu-mobile.abrir-menu{
+            width: 70%;
+        }
+        .menu-mobile.abrir-menu ~ .overlay{
+            display: block;
+        }
+        .menu-mobile .fechar img{
+            height: 3.5rem;
+            padding: 3% 0 0 2%;
+        }
+            .menu-mobile nav{
+                text-align: left; 
+            }
+
+            .menu-mobile nav ul li{
+                list-style: none;
+                padding: 2vh;
+            }
+
+            .menu-mobile nav ul li a{
+                list-style: none;
+                color: var(--cor-texto-menu);
+                text-decoration: none;
+                font-family: 'Oswald', serif;
+                text-underline-offset: .1em;
+                font-size: 200%; 
+                padding: 4%;
+                letter-spacing: 2px;
+            }
+            .overlay{
+                background-color: #141418c2;
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left:0;
+                z-index: 888;
+                display: none;
+            }
+    };
