@@ -4,12 +4,13 @@ body{
   padding: 0%;
 }
 .inicio{
+
   position: fixed;
   width: 100%;
   height: 100%;
   transform: translateY(100%);/*como o menu fica quando carrega, se for 50% vai ficar no meio da dela*/
 }
-
+/*efeito transicao*/
 #overlay {
   position: absolute;
   top: 0;
@@ -42,6 +43,7 @@ nav ul {
   height: 100%;
   margin: 0;
   padding: 0;
+
 }
 
 
@@ -63,11 +65,12 @@ nav ul li {
 
 nav li a {
   position: relative;
-  top: 46%;
+  top: 15%;
   text-decoration: none;
   display: block;/**/
   color: #1A1414;
   justify-content:center;
+  max-height:4rem;
 
 }
 button{ 
@@ -99,14 +102,14 @@ button{
 
 .leite:before {/*é sobre a barrinha que aparece quando coloca o mouse em cima*/
   content: '';
-  width:200rem;
+  width: 200rem;
   height: 5px;
   background-color:#fad998;
   position: absolute;
-  top: 90%;/*onde esta posicionado em relacao ao topo*/
-  left: -1rem;;/*tanto que vai o risco*/
+  top: 90%;/*?*/
+  left: -1rem;/*tanto que vai o risco*/
   transform: translateX(-100%);/*posição inicial*/
-  transition: all 0.2s linear;/*velocidade*/
+  transition: all .2s linear;/*velocidade*/
 }
 .mel:before {/*é sobre a barrinha que aparece quando coloca o mouse em cima*/
   content: '';
@@ -128,7 +131,7 @@ nav li a:after {/*texto que aparece em baixo*/
   position: relative;
   z-index: 100;
   color: #1A1414;/*cor texto*/
-  display: block;/*o block deixa o texto no meio*/
+  display: flex;/*o block deixa o texto no meio*/
   justify-content:center;
   margin-right: auto;
   margin-left: auto;
@@ -155,6 +158,13 @@ nav li:nth-of-type(1){background-color:#FFFAF0}
 nav li:nth-of-type(2){background-color:#FFD700 }
 
 
-@media screen and (max-width:1230px){
 
+@media screen and (max-width:900px){
+  .inicio{transform: translateY(50%)}
+nav ul {flex-direction: column;top:0;}
+}
+
+@media screen and (max-height:275px){
+  .leite:before, .mel:before ,nav li a:after{display: none;}
+  nav ul {flex-direction: column;}
 }
