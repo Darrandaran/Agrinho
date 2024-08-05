@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
     :root{/*variaveis*/
         --cor-menu: #FFD700;
-        --cor-h1:#9c987e ;
-        --cor-h2:#fdea7c  ;
+        --cor-h1:#FEC90D;
+        --cor-h2: #E5D013 ;
         --cor-texto:#FFFAF0 ;
         --cor-texto-menu:#141418;
     }
@@ -47,10 +47,11 @@ body{
     .menu li a img:hover{
         height: 5rem;/*tanto q vai aumentar*/
     }
-    .texto{
-        margin-left:28%;
 
+    .sobe, .h2, .p, .ha{
+        visibility: hidden;
     }
+
     h1{text-shadow: 
         1px -1px 0 #151515, 
         -1px 2px 1px #292929 , 
@@ -58,8 +59,7 @@ body{
         -3px 6px 1px #525252;
         list-style: none;
         display: flex;
-        margin-right:20%;
-        padding-top:5% ;
+        padding:5% ;
         justify-content: center;
         font-family: 'Oswald', sans-serif;/*fonte*/
         font-weight: 400;/*tamanho da grossura da fonte*/
@@ -74,7 +74,6 @@ body{
         -3px 6px 1px #525252;
         display: flex;
         justify-content: center;
-        margin-right:20%;
         padding:6%;
         font-family: 'Work sans', sans-serif;/*fonte*/
         font-weight: 600;/*tamanho da grossura da fonte*/
@@ -82,14 +81,78 @@ body{
         color: var(--cor-h2);
     }
 
-    p{  border-radius: 5%;
+    p{  
+        border-radius: 5vh;
         padding: 3%;
-        background-color: #141418;
+        margin: 15%;
+        padding: 5%;
+        background-color: #1a1a1d;
         color: var(--cor-texto);
         font-family: 'Roboto Mono', serif;
         font-size: 30px;
-        display: flex;
+        display: block;
         justify-content: center;
-        margin-right:10%;
         color: var(--cor-texto);
     }
+
+    @media (min-width:800px){
+        .menu-mobile{display: none;}
+        .abrir{display: none;}
+    }
+   @media (max-width:799px)
+   {.menu{display: none;}        
+   .abrir img{
+    height: 4rem;
+    padding: 3% 0 0 2%;
+    }
+        .menu-mobile{
+            background-color: #FFD700;
+            height: 100%;
+            width:0%;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 99999;
+            transition: .4s;
+            }
+        .menu-mobile.abrir-menu{
+            width: 70%;
+        }
+        .menu-mobile.abrir-menu ~ .overlay{
+            display: block;
+        }
+        .menu-mobile .fechar img{
+            height: 3.5rem;
+            padding: 3% 0 0 2%;
+        }
+            .menu-mobile nav{
+                text-align: left; 
+            }
+
+            .menu-mobile nav ul li{
+                list-style: none;
+                padding: 2vh;
+            }
+
+            .menu-mobile nav ul li a{
+                list-style: none;
+                color: var(--cor-texto-menu);
+                text-decoration: none;
+                font-family: 'Oswald', serif;
+                text-underline-offset: .1em;
+                font-size: 5vh; 
+                padding: 4%;
+                letter-spacing: 0.5vh;
+            }
+            .overlay{
+                background-color: #141418c2;
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left:0;
+                z-index: 888;
+                display: none;
+            }
+    };
