@@ -18,7 +18,7 @@ aparecer.reveal('.p',{
 })
 
 aparecer.reveal('.ha',{
-    duration: 1000,
+    duration: 500,
     distance:'90px',
     delay: 250,
     origin:'left'
