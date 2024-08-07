@@ -1,10 +1,6 @@
 
 window.aparecer = ScrollReveal({reset:true})
 
-aparecer.reveal('.sobe',{
-    duration: 2000,
-    distance:'90px'
-})
 //titulo
 aparecer.reveal('.h2',{
     duration: 1000,
