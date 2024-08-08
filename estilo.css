@@ -23,6 +23,7 @@ body{
         list-style: none;
         display: flex;
         justify-content: space-around;
+        margin: 2vh;
         
     }
     .menu li{
@@ -34,6 +35,7 @@ body{
         font-family: 'Oswald', serif;
         text-underline-offset: .1em;
         font-size: 200%;
+        letter-spacing: 3px;
         transition: all 0.5s ease; /*velocidade da transição*/    
     }
     .menu li a:hover{
@@ -81,7 +83,7 @@ body{
         color: var(--cor-h2);
     }
 
-    p{  
+    .p{  
         border-radius: 5vh;
         padding: 3%;
         margin: 15%;
@@ -94,6 +96,8 @@ body{
         justify-content: center;
         color: var(--cor-texto);
     }
+
+ 
 
     @media (min-width:800px){
         .menu-mobile{display: none;}
