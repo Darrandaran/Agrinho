@@ -7,7 +7,7 @@ buttons.forEach((button) => {
     event.preventDefault();
     const link = button.querySelector('a');
     const href = link.getAttribute('href');
-    const gifSrc = button.getAttribute('data-gif'); // Pega o caminho do GIF do atributo data-gif
+    const gifSrc = button.getAttribute('data-gif'); 
 
     overlay.style.display = 'flex';
     gif.src = gifSrc;
