@@ -75,8 +75,8 @@ body{
         display: flex;
         justify-content: center;
         padding:6%;
-        font-family: 'Work sans', sans-serif;/*fonte*/
-        font-weight: 600;/*tamanho da grossura da fonte*/
+        font-family: 'Work sans', sans-serif;
+        font-weight: 600;
         font-size: 48px;
         color: var(--cor-h2);
     }
