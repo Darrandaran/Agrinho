@@ -15,11 +15,9 @@
     box-sizing: border-box;
     letter-spacing: 1px;
 }
-
-main {
-    height: 80vh;
+h1{
+    color:  var(--color-neutral-40);
 }
-
 footer {
     width: 100%;
     color: var(--color-neutral-40);
@@ -32,12 +30,14 @@ footer {
 #footer_content {
     background-color: var(--color-neutral-10);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 3rem 3.5rem;
 }
 
-#footer_contacts h1 {
+.descricao img {
     margin-bottom: 0.75rem;
+    border-radius: 2vh;
+    height: 10vh!important; 
 }
 
 #footer_social_media {
@@ -90,46 +90,7 @@ footer {
 }
 
 .footer-list .footer-link:hover {
-    color: #7f37c9;
-}
-
-#footer_subscribe {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-#footer_subscribe p {
-    color: var(--color-neutral-30);
-}
-
-#input_group {
-    display: flex;
-    align-items: center;
-    background-color: var(--color-neutral-0);
-    border-radius: 4px;
-}
-
-#input_group input {
-    all: unset;
-    padding: 0.75rem;
-    width: 100%;
-}
-
-#input_group button {
-    background-color: #7f37c9;
-    border: none;
-    color: var(--color-neutral-40);
-    padding: 0px 1.25rem;
-    font-size: 1.125rem;
-    height: 100%;
-    border-radius: 0px 4px 4px 0px;
-    cursor: pointer;
-    transition: all 0.4s;
-}
-
-#input_group button:hover {
-    opacity: 0.8;
+    color:  var(--color-neutral-40);
 }
 
 #footer_copyright {
