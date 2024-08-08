@@ -48,7 +48,7 @@ body{
         height: 5rem;/*tanto q vai aumentar*/
     }
 
-    .sobe, .h2, p{
+    .sobe, .h2, .p, .ha{
         visibility: hidden;
     }
 
@@ -67,7 +67,7 @@ body{
         color: var(--cor-h1);
     }
 
-    h2{text-shadow: 
+    .h2{text-shadow: 
         1px -1px 0 #444444, 
         -1px 2px 1px #505050, 
         -2px 4px 1px #636363, 
@@ -81,7 +81,7 @@ body{
         color: var(--cor-h2);
     }
 
-    p{  
+    .p{  
         border-radius: 5vh;
         margin-top: 0!important;
         margin: 15%;
