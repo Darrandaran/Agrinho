@@ -26,11 +26,13 @@ Para acessar o site "Leite e Apicultura", basta seguir o link: [site-leite-com-m
 Ao entrar no site, você encontrará um menu de navegação na parte superior da página, que inclui as seguintes seções:
 
 - **Leite**  **Apicultura**: Ao escolher um você será enviado ao site sobre o tema.
+- **Após isso**: você será recepcionado na página com um menu simples mas intuitivo e um texto descrevendo informações principais e importantes sobre o tema escolhido.
 - **🏡**:para voltar á pagina de início.
+- **Após isso**: Nos demais botões vão te enviar á um artigo que irá descrever ou expliclar sobre o titulo escolhido.
 
 ## Funcionalidades
 
-Na seção **Pagina inicial**, você será recepcionado com uma breve informação sobre o tema e com um belo menu no qual seus titulos irão te redirecionar a artigos informativos sobre o assunto.
+Na **Pagina inicial**, você será recepcionado com uma breve informação sobre o tema e com um belo menu no qual seus titulos irão te redirecionar a artigos informativos sobre o assunto.
 
 ## Responsividade
 A página foi adaptada a todos os tipos de telas sem problemas, além de para telas menores adicionamos um menu Hambúrguer na parte superior do site.
