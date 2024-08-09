@@ -34,9 +34,12 @@ Ao entrar no site, você encontrará um menu de navegação na parte superior da
 
 Na **Pagina inicial**, você será recepcionado com uma breve informação sobre o tema e com um belo menu no qual seus titulos irão te redirecionar a artigos informativos sobre o assunto.
 
+caso tenha escolhido a **Apicultura**, você verá temas como: Produtos, Colmeia, Ambiente, Agrotoxicos e Equipamentos ao clicar em um deles você será redirecionado a artigos informativos sobre o assunto.
+
+caso tenha escolhido a **Leite**, você verá temas como: Gado, Ordenha, Industria, Distribuição e Qualidade ao clicar em um deles você será redirecionado a artigos informativos sobre o assunto.
+
 ## Responsividade
 A página foi adaptada a todos os tipos de telas sem problemas, além de para telas menores adicionamos um menu Hambúrguer na parte superior do site.
-
 
 ## Agradecimentos
 
