@@ -35,13 +35,6 @@ footer {
     flex-direction: row;
 }
 
-.descricoes img {
-    margin-bottom: 0.75rem;
-    border-radius: 2vh;
-    margin-right: 3vh;
-    height: 10vh!important; 
-}
-
 .footer-link {
     text-decoration: none;
 }
