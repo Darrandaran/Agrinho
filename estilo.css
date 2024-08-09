@@ -61,7 +61,8 @@ body{
         -3px 6px 1px #525252;
         display: flex;
         justify-content: center;
-        padding:6%;
+        padding-top:15%;
+        margin-bottom: 10%;
         font-family: 'Work sans', sans-serif;
         font-weight: 600;
         font-size: 48px;
@@ -71,8 +72,7 @@ body{
     .p{  
         border-radius: 5vh;
         padding: 3%;
-        margin: 15%;
-        padding: 5%;
+        margin: 0% 15% 3% 15%;
         background-color: #1a1a1d;
         color: var(--cor-texto);
         font-family: 'Roboto Mono', serif;
