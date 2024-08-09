@@ -54,21 +54,6 @@ body{
         visibility: hidden;
     }
 
-    h1{text-shadow: 
-        1px -1px 0 #151515, 
-        -1px 2px 1px #292929 , 
-        -2px 4px 1px #3e3e3e, 
-        -3px 6px 1px #525252;
-        list-style: none;
-        display: flex;
-        padding:5% ;
-        justify-content: center;
-        font-family: 'Oswald', sans-serif;/*fonte*/
-        font-weight: 400;/*tamanho da grossura da fonte*/
-        font-size: 70px;
-        color: var(--cor-h1);
-    }
-
     .h2{text-shadow: 
         1px -1px 0 #151515, 
         -1px 2px 1px #292929 , 
